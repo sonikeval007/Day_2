@@ -1,0 +1,294 @@
+<!-- <html>
+
+<head>
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/css">
+        #MainUL li ul li {
+            display: none;
+        }
+
+        #MainUL li:hover ul li {
+            display: block;
+        }
+
+        #MainUL li:hover ul li ul li {
+            display: none;
+        }
+
+        #MainUL li ul li:hover ul li {
+            display: block;
+        }
+
+        #MainUL li ul li:hover ul li ul li {
+            display: none;
+        }
+
+        #MainUL li ul li ul li:hover ul li {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="MainUL">
+        <li>Computer Language
+            <ul>
+                <li>Low level Language
+                    <ul>
+                        <li style="color:red ;">Machine Language
+                            <ul>
+                                <li> 0's and 1's</li>
+                            </ul>
+                        </li>
+                        <li style="color:rgb(52, 34, 156) ;"> Assembly Language
+                            <ul>
+                                <li> ADD A, SUB B</li>
+                            </ul>
+                        </li>
+                </li>
+            </ul>
+        </li>
+        <li>High level Language
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>PYTHON</li>
+                <li>PHP</li>
+                <li>JAVA</li>
+                <li></li>
+            </ul>
+        </li> -->
+
+
+<!-- ------------------------ -->
+<!-- <html>
+
+<head>
+    <title>Demo CSS3</title>
+    <style type="text/css">
+        div {
+            height: 100px;
+            width: 200px;
+            transition: 4s;
+            font-size: 25px;
+            font-weight: bolder;
+            color: #000000;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+
+        #TranslateDiv:hover {
+            -webkit-transform: translate(100px, 100px);
+            -moz-transform: translate(100px, 100px);
+            -ms-transform: translate(100px, 100px);
+            -o-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+            background-color: black;
+            color: Yellow;
+        }
+
+        #RotateDiv:hover {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+            background-color: #000000;
+            color: Yellow;
+
+        }
+
+        #RotateDivX:hover {
+            -webkit-transform: rotateX(1, 1, 0, 270deg);
+            -moz-transform: rotateX(1, 1, 0, 270deg);
+            -ms-transform: rotateX(1, 1, 0, 270deg);
+            -o-transform: rotateX(1, 1, 0, 270deg);
+            transform: rotateX(1, 1, 0, 270deg);
+            background-color: #000000;
+            color: Yellow;
+
+        }
+
+        #RotateDiv3D:hover {
+            -webkit-transform: rotate3d(1, 1, 0, 360deg);
+            -moz-transform: rotate3d(1, 1, 0, 360deg);
+            -ms-transform: rotate3d(1, 1, 0, 360deg);
+            -o-transform: rotate3d(1, 1, 0, 360deg);
+            transform: rotate3d(1, 1, 0, 360deg);
+            background-color: #000000;
+            color: Yellow;
+
+        }
+
+        #SkewDiv:hover {
+            -webkit-transform: skew(45deg);
+            -moz-transform: skew(45deg);
+            -ms-transform: skew(45deg);
+            -o-transform: skew(45deg);
+            transform: skew(45deg);
+            background-color: black;
+            color: yellow;
+        }
+
+        #ScaleDiv:hover {
+            -webkit-transform: scale(1.5, 0.5);
+            -moz-transform: scale(1.5, 0.5);
+            -ms-transform: scale(1.5, 0.5);
+            -o-transform: scale(1.5, 0.5);
+            transform: scale(1.5, 0.5);
+            background-color: black;
+            color: Yellow;
+        }
+
+        #Matrix:hover {
+            -webkit-transform: matrix(2.5, 0.5);
+            -moz-transform: matrix(2.5, 0.5);
+            -ms-transform: matrix(2.5, 0.5);
+            -o-transform: matrix(2.5, 0.5);
+            transform: matrix(2.5, 0.5);
+            background-color: black;
+            color: Yellow;
+        }
+
+        #OpacityDiv:hover {
+            opacity: 0.5;
+        }
+
+        #RGBADiv:hover {
+            background: rgba(63, 20, 163, 0.5);
+        }
+
+        #BoxShadowDiv:hover {
+            box-shadow: 0px 0px 30px red;
+        }
+
+        #TextShadowDiv:hover {
+            text-shadow: 3px 3px 3px red;
+        }
+
+        #BorderRadiusDiv:hover {
+            border-radius: 60%;
+        }
+
+        #OverFlowDiv {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee direction="left" scrollamount="15">
+        <div id="TranslateDiv">Translate</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="RotateDiv" style="margin-left: 180px;">Rotate</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="RotateDiv3D" style="margin-left: 370px;">Rotate 3d</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="SkewDiv" style="margin-left: 560px;">Skew</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="ScaleDiv" style="margin-left: 670px;">Scale</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="OpacityDiv" style="margin-left: 840px;">Opacity</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="RGBADiv">RGBA</div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15"><img id="BoxShadowDiv"
+            src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg" height="200px"
+            width="200px"></marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="TextShadowDiv">
+            <marquee>Text-Shadow</marquee>
+        </div>
+    </marquee>
+    <hr />
+    <marquee direction="right" scrollamount="15">
+        <div id="BorderRadiusDiv">Border Radius</div>
+    </marquee>
+    <hr />
+    <marquee direction="left" scrollamount="15">
+        <div id="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+            Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow </div>
+    </marquee>
+    <hr />
+</body>
+
+</html> -->
+
+<html>
+
+<head>
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/css">
+        #MainUL li ul li {
+            display: none;
+        }
+
+        #MainUL li:hover ul li {
+            display: block;
+        }
+
+        #MainUL li:hover ul li ul li {
+            display: none;
+        }
+
+        #MainUL li ul li:hover ul li {
+            display: block;
+        }
+
+        #MainUL li ul li:hover ul li ul li {
+            display: none;
+        }
+
+        #MainUL li ul li ul li:hover ul li {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="MainUL">
+        <li>collage semesters
+            <ul>
+                <li>3rd semester
+                    <ul>
+                        <li style="color:red ;">data sturucture
+                            <ul>
+                                <li> tree & graph</li>
+                            </ul>
+                        </li>
+                        <li style="color:rgb(52, 34, 156) ;">dbms
+                            <ul>
+                                <li> data managment , drives</li>
+                            </ul>
+                        </li>
+                </li>
+            </ul>
+        </li>
+        <li>4th semester
+            <ul>
+                <li>pythone</li>
+                <li>oopu</li>
+                <li>os</li>
+                <li>em</li>
+                <li>camp</li>
+                <li></li>
+            </ul>
+        </li>
